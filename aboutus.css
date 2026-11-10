@@ -1,0 +1,384 @@
+
+/* =====================================
+   PUSTAK-X | ABOUT US PAGE CSS
+   ===================================== */
+
+
+/* ===== GENERAL STYLE ===== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    min-height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fc;
+    color: #1e293b;
+    line-height: 1.6;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+/* ===== HEADER - SAME AS YEARSEM ===== */
+
+header {
+    background-color: #ffffff;
+    padding: 20px 0 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+    border-bottom: 1px solid #e2e8f0;
+}
+
+
+/* ===== LOGO AND WEBSITE NAME ===== */
+
+header > div {
+    display: grid;
+    grid-template-columns: 80px auto;
+    grid-template-rows: auto auto;
+    align-items: center;
+    column-gap: 18px;
+
+    margin: 15px 6% 35px;
+}
+
+header img {
+    grid-column: 1;
+    grid-row: 1 / 3;
+
+    width: 70px;
+    height: auto;
+}
+
+header h1 {
+    grid-column: 2;
+    grid-row: 1;
+
+    font-size: 36px;
+    color: #19427b;
+    line-height: 1.2;
+}
+
+header p {
+    grid-column: 2;
+    grid-row: 2;
+
+    color: #526985;
+    font-size: 16px;
+    font-style: italic;
+}
+
+
+/* ===== NAVIGATION BAR - SAME AS YEARSEM ===== */
+
+header > ul {
+    background-color: #193e78;
+    width: 100%;
+    padding: 17px 15px;
+
+    list-style: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+header > ul li a {
+    color: #ffffff;
+    text-decoration: none;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+header > ul li a:hover {
+    color: #a9caff;
+}
+
+
+/* ===== MAIN SECTION ===== */
+
+main {
+    width: 100%;
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 60px 20px;
+    gap: 30px;
+}
+
+
+/* ===== ALL CONTENT SECTIONS ===== */
+
+main > section {
+    width: 100%;
+    max-width: 1000px;
+
+    background-color: #ffffff;
+
+    padding: 40px 35px;
+    border-radius: 20px;
+
+    box-shadow: 0 12px 35px rgba(30, 64, 120, 0.08);
+}
+
+
+/* ===== OUR DETAILS SECTION ===== */
+
+main > section:first-child {
+    text-align: center;
+}
+
+main > section:first-child h2 {
+    font-size: 34px;
+    color: #19427b;
+    margin-bottom: 20px;
+}
+
+main address {
+    font-style: normal;
+    color: #475569;
+    font-size: 16px;
+    line-height: 2;
+    margin-bottom: 20px;
+}
+
+main address strong {
+    color: #19427b;
+    font-size: 19px;
+}
+
+main > section:first-child p {
+    color: #475569;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+main > section:first-child a {
+    color: #214ee8;
+    text-decoration: none;
+}
+
+main > section:first-child a:hover {
+    text-decoration: underline;
+}
+
+
+/* ===== ABOUT PUSTAK-X SECTION ===== */
+
+.about-pustak {
+    text-align: left;
+}
+
+.about-pustak h2 {
+    font-size: 32px;
+    color: #19427b;
+    margin-bottom: 20px;
+}
+
+.about-pustak p {
+    font-size: 16px;
+    color: #64748b;
+    margin-bottom: 18px;
+}
+
+.about-pustak h3 {
+    font-size: 23px;
+    color: #19427b;
+    margin: 25px 0 12px;
+}
+
+
+/* ===== WHAT WE OFFER LIST ===== */
+
+.about-pustak ul {
+    padding-left: 25px;
+    margin-bottom: 20px;
+}
+
+.about-pustak ul li {
+    color: #334155;
+    font-size: 16px;
+    padding: 5px 0;
+}
+
+
+/* ===== TAGLINE ===== */
+
+.about-pustak .tagline {
+    color: #214ee8;
+    font-size: 19px;
+    text-align: center;
+    margin-top: 25px;
+}
+
+
+/* ===== FOLLOW US SECTION ===== */
+
+main > section:last-child h3 {
+    color: #19427b;
+    font-size: 25px;
+    margin-bottom: 18px;
+}
+
+main > section:last-child ul {
+    list-style: none;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+main > section:last-child ul li a {
+    display: inline-block;
+
+    color: #214ee8;
+    text-decoration: none;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+main > section:last-child ul li a:hover {
+    color: #173bb5;
+    text-decoration: underline;
+}
+
+
+/* ===== FOOTER - SAME AS YEARSEM ===== */
+
+footer {
+    background-color: #142f55;
+    color: #ffffff;
+
+    text-align: center;
+    padding: 30px 20px;
+
+    width: 100%;
+}
+
+footer p {
+    font-size: 15px;
+    line-height: 2;
+}
+
+footer b {
+    color: #ffffff;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+
+    font-size: 20px;
+    margin: 0 8px;
+
+    transition: 0.3s;
+}
+
+footer a:hover {
+    color: #8dbbff;
+}
+
+
+/* ===== RESPONSIVE DESIGN ===== */
+
+@media (max-width: 768px) {
+
+    /* Header */
+
+    header > div {
+        margin: 15px 4% 30px;
+        grid-template-columns: 60px auto;
+        column-gap: 8px;
+    }
+
+    header h1 {
+        font-size: 27px;
+    }
+
+    header img {
+        width: 55px;
+    }
+
+
+    /* Navigation */
+
+    header > ul {
+        flex-wrap: wrap;
+        gap: 18px 25px;
+    }
+
+    header > ul li a {
+        font-size: 14px;
+    }
+
+
+    /* Main */
+
+    main {
+        padding: 40px 15px;
+    }
+
+    main > section {
+        padding: 30px 25px;
+    }
+
+    main > section:first-child h2,
+    .about-pustak h2 {
+        font-size: 28px;
+    }
+}
+
+
+/* ===== SMALL MOBILE SCREEN ===== */
+
+@media (max-width: 480px) {
+
+    header > ul {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    main {
+        padding: 30px 12px;
+    }
+
+    main > section {
+        padding: 25px 18px;
+    }
+
+    main > section:first-child h2,
+    .about-pustak h2 {
+        font-size: 24px;
+    }
+
+    .about-pustak h3 {
+        font-size: 20px;
+    }
+
+    main > section:last-child ul {
+        flex-direction: column;
+        gap: 12px;
+    }
+}

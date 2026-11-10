@@ -1,0 +1,117 @@
+
+/* ===== GENERAL STYLE ===== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fc;
+    color: #1e293b;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* ===== SIGNUP CONTAINER ===== */
+
+.signup-container {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 460px;
+    padding: 35px 40px;
+    border-radius: 18px;
+    box-shadow: 0 10px 35px rgba(23, 59, 117, 0.08);
+    text-align: center;
+}
+
+/* ===== HEADING ===== */
+
+.signup-container h2 {
+    color: #173b75;
+    font-size: 29px;
+    margin-bottom: 12px;
+}
+
+.signup-container p {
+    color: #64748b;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 22px;
+}
+
+/* ===== FORM ===== */
+
+.signup-container form {
+    text-align: left;
+}
+
+.signup-container label {
+    display: block;
+    color: #173b75;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+.signup-container input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 16px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+}
+
+.signup-container input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+/* ===== SIGNUP BUTTON ===== */
+
+.signup-container button {
+    width: 100%;
+    padding: 13px;
+    background-color: #1d4ed8;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.signup-container button:hover {
+    background-color: #173b75;
+}
+
+/* ===== LOGIN LINK ===== */
+
+.signup-container a {
+    color: #1d4ed8;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.signup-container a:hover {
+    text-decoration: underline;
+}
+
+/* ===== MOBILE RESPONSIVE ===== */
+
+@media (max-width: 480px) {
+    .signup-container {
+        padding: 28px 22px;
+    }
+
+    .signup-container h2 {
+        font-size: 25px;
+    }
+}
